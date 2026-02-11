@@ -1,0 +1,76 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Styling */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  color: #ffffff;
+  transition: background-color 1s ease-in-out;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: 1px;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Buttons */
+button {
+  padding: 12px 30px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  box-shadow: 0 8px 20px rgba(255, 75, 43, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 75, 43, 0.45);
+}
+
+/* Click Effect */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Stop Button Different Color */
+#stop {
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  box-shadow: 0 8px 20px rgba(109, 213, 237, 0.3);
+}
+
+#stop:hover {
+  box-shadow: 0 12px 30px rgba(109, 213, 237, 0.45);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
